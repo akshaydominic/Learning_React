@@ -1,7 +1,7 @@
 class Hello extends React.Component{
     render(){
-        console.log(this.props);
-        return <h1>Hello World!</h1>;
+        const name= this.props.to;
+        return <h1>Hello World! {name}</h1>;
     }
 }
 
