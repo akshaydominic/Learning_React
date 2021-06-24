@@ -3,10 +3,10 @@ class App extends React.Component{
         return(
             <div >
                 <h1>Slot Machines!</h1>
-                <PropsExer one="x" two="x" three="x"/>
-                <PropsExer one="y" two="y" three="y"/>
-                <PropsExer one="x" two="y" three="z"/>
-                <PropsExer one="😎" two="😎" three="😎"/>
+                <PropsExerv2 one="y" two="y" three="y"/>
+                <PropsExerv2 one="x" two="y" three="z"/>
+                <PropsExerv2 one="x" two="x" three="x"/>
+                <PropsExerv2 one="😎" two="😎" three="😎"/>
 
             </div>
         )
