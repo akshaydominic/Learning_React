@@ -1,11 +1,15 @@
 import React,{Component} from 'react';
 import './pokecard.css';
 
-const imgurl="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/";
-//{id: 4, name: 'Charmander', type: 'fire', base_experience: 62},
+// const imgurl="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/";
+const imgurl="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/";
+let padToThree = (number)=>{
+    return (number<=999) ? `00${number}`.slice(-3) : number;
+}
+
 class Pokecard extends Component{
     render(){
-        let realImg = `${imgurl}${this.props.id}.png`;
+        let realImg = `${imgurl}${padToThree(this.props.id)}.png`;
         return(
             <div className="Pokecard">
                 <h1 className="Pokecard-title">{this.props.name}</h1>
