@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import './button.css'
 
 class State extends Component{
     constructor(props){
@@ -17,7 +18,7 @@ class State extends Component{
             <div>
                 <h1>State</h1>
                 <h2>{this.state.num}</h2>
-                <button onClick={this.somefunction}></button>
+                <button class="Button-1"onClick={this.somefunction} > Click me </button>
             </div>
         )
     }
