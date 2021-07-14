@@ -28,6 +28,7 @@ class CoinFlip extends Component{
                 isTails:currentState.isTails=true
             }));
         }else{
+
             this.setState(currentState=>({
                 heads:currentState.heads+1,
                 isTails:currentState.isTails=false
