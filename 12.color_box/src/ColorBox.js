@@ -5,8 +5,18 @@ class ColorBox extends Component{
     render(){
         return(
             <div className="ColorBox">
-                <Color />
-                <Color />
+            <Color />
+            <Color />
+            <Color />
+            <Color />
+            <Color />
+            <Color />
+            <Color />
+            <Color />
+            <Color />
+            <Color />
+            <Color />
+            <Color />
 
             </div>
         )

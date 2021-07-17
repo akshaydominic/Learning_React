@@ -1,5 +1,6 @@
 .ColorBox{
     display: flex;
-    
+    word-spacing: 30px;
+    flex-wrap: nowrap;
 
 }
