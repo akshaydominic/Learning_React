@@ -5,8 +5,11 @@ class Card extends Component{
         super(props);
         this.state={
             deckId:'',
-            remaining:''
+            remaining:'',
+            img:'',
+            isGameOver:false
         };
+        this.handleClick = this.handleClick.bind(this);
     }
     //data.cards.image
     //...suit,value
@@ -20,20 +23,29 @@ class Card extends Component{
         }
         callDeck();
     }
-    componentDidUpdate(){
-        let calldeck = async ()=>{
-            const response = await axios.get(`https://deckofcardsapi.com/api/deck/${this.state.deckId}/draw/`);
-            this.setState(currentState=>({
-                remaining:currentState.remaining-1
-            }));
-            console.log(response);
+    handleClick(){
+        if(this.state.remaining > 0){
+            let calldeck = async ()=>{
+                const response = await axios.get(`https://deckofcardsapi.com/api/deck/${this.state.deckId}/draw/`);
+                this.setState(currentState=>({
+                    remaining:currentState.remaining-1
+                }));
+                this.setState({
+                    img:response.data.cards[0].image
+                })
+            }
+            calldeck();
+        }else{
+            this.setState({isGameOver:true});
         }
-        calldeck();
     }
     render(){
         return(
             <div>
                 <h1>{`DeckId: ${this.state.deckId} Remaining: ${this.state.remaining}`}</h1>
+                <h2>{this.state.img}</h2>
+                {!this.state.isGameOver && <button onClick={this.handleClick}>Get a Card</button>}
+                <img src={this.state.img}/>
 
             </div>
         )
