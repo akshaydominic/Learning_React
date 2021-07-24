@@ -4,7 +4,8 @@ import './Header.css'
      render(){
          return(
             <div className="header">
-                 <h1>hi</h1> 
+                <i class="fas fa-stream"> Admin Dashboard</i>
+                
             </div>
          )
      }

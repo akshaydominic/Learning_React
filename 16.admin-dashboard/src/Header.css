@@ -1,4 +1,10 @@
 .header{
-    position: relative;
-    align-items: center;
+    position: absolute;
+    left:13vh;
+    font-size: 30px;
+    color:black;
+    margin-top: 2vh;
+    background-color: blueviolet;
+    width: 88%;
+    height: 120px;
 }

@@ -1,48 +1,50 @@
-.Sidebar{
-    background-color: white;
-    width: 120px;
-    height: 100vh;
-       
+.Sidebar {
+	background-color: blueviolet;
+	width: 120px;
+	height: 100vh;
 }
-button{
-    width: 110px;
-    font-size: 40px;
-    padding:20px 20px 20px 20px;
-    margin-bottom: 25px;
-    display: flex;
-    border: 2px solid black;
-    background-color:white;
-    border: 3px solid white;
-    border-radius: 10px;
-    
-
+button {
+	width: 110px;
+	font-size: 40px;
+	padding: 20px 20px 20px 20px;
+	margin-bottom: 25px;
+	display: flex;
+	border: 2px solid black;
+	background-color: white;
+	border: 3px solid white;
+	border-radius: 10px;
+	cursor: pointer;
 }
 
-i{
-    font-size: 40px;
+i {
+	font-size: 40px;
 }
 
-.Sidebar-inner{
-    font-size: 15px;
-    margin-top: 20px;
-    font-family:'Times New Roman', Times, serif;
-
+.Sidebar-inner {
+	font-size: 15px;
+	margin-top: 20px;
+	font-family: 'Times New Roman', Times, serif;
 }
 
-#last{
-    color:grey;
+#last {
+	color: grey;
 }
-#first{
-    color: #cf03fc;
+#first {
+	color: #cf03fc;
 }
-#element{
-    font-size: 50px;
-    color: white;
-    padding:20px;
-    margin-bottom: 15px;
-    background-color:#880085;
-    margin-left: 5px;
-    margin-top: 5px;
-    border-radius: 10px;
-    height: 80px;
+#element {
+	font-size: 50px;
+	color: white;
+	padding: 20px;
+	margin-bottom: 15px;
+	background-color: #880085;
+	margin-left: 5px;
+	margin-top: 5px;
+	border-radius: 10px;
+	height: 80px;
+}
+
+#teams :hover {
+	cursor: pointer;
+    color: #880085;
 }
